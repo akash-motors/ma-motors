@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MA Motors</title>
+    <!-- <link rel="" sizes="180x180" href="/apple-touch-icon.png"> -->
+    <link rel="shortcut icon" href="../ma-motors.github.io/favicon-16x16.png" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(120deg, #ffe2c4, #e4d4fc);
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10%;
+            background: rgba(255, 255, 255, 0.7);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 10px 0;
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #7b4dff;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 30px;
+            background: #000;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn.secondary {
+            background: transparent;
+            border: 2px solid #7b4dff;
+            color: #7b4dff;
+        }
+
+        .main {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px 10%;
+            flex-wrap: wrap;
+        }
+
+        .main-text {
+            max-width: 500px;
+        }
+
+        .main-text h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .main-text p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .main-image img {
+            width: 100%;
+            max-width: 400px;
+            margin-top: 30px;
+        }
+
+        section.info {
+            padding: 60px 10%;
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+
+        section.info h2 {
+            font-size: 40px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        section.info p,
+        section.info ul {
+            font-size: 20px;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        section.info ul {
+            padding-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 10%;
+            background-color: #f8f8f8;
+            font-size: 14px;
+            color: #777;
+        }
+
+        @media (max-width: 768px) {
+
+            header,
+            .main {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav {
+                margin: 10px 0;
+            }
+
+            .main-text,
+            .main-image {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo"><img width="30px"  src="/ma-motors.github.io/android-chrome-512x512.png" > MA Motors</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#" onclick="document.getElementById('About1').scrollIntoView({ behavior: 'smooth' });">About</a>
+            <a href="#" onclick="document.getElementById('Vision1').scrollIntoView({ behavior: 'smooth' });">Vision</a>
+            <a href="#" onclick="document.getElementById('Contact1').scrollIntoView({ behavior: 'smooth' });">Contact</a>
+        </nav>
+        <!-- <button class="btn">Sign Up Free</button> -->
+    </header>
+
+    <section class="main">
+        <div class="main-text">
+            <p
+                style="font-size: 14px; background-color: #fff3cd; padding: 8px 15px; border-radius: 20px; display: inline-block;">
+                🚗 Where Mobility Meets Innovation
+            </p>
+            <h1>The Future of Automotive Intelligence</h1>
+            <p>MA Motors is redefining the driving experience through sustainable, tech-driven, customer-first vehicle
+                manufacturing. We craft smart and reliable mobility solutions for every lifestyle.</p>
+            <button class="btn">Start With 7 Days Trial</button>
+            <!-- <button class="btn secondary" style="margin-left: 10px;">View Demo</button> -->
+        </div>
+        <div class="main-image">
+            <img src="/ma-motors.github.io/android-chrome-512x512.png" alt="Cars Illustration" />
+        </div>
+    </section>
+
+    <!-- Informational Sections -->
+    <section class="info">
+        <h2 id="About1">About Us</h2>
+        <p> 
+            MA Motors is an automotive company founded in 2022 with a vision to revolutionize the Indian automobile industry
+            by introducing high-performance electric vehicles and smart mobility solutions. Our journey began with the belief
+            that the future of mobility must be sustainable, innovative, and accessible.
+        </p>
+        <p>
+            Headquartered in New Delhi and with an operational office in Pune, MA Motors is committed to building cutting-edge
+            electric scooters and motorcycles tailored to Indian roads and consumer preferences. Our leadership team is
+            composed of industry veterans and engineers with global exposure and deep experience in product development,
+            automotive design, and renewable technologies.
+        </p>
+        <p>
+            At MA Motors, we strive to balance affordability with futuristic design and functionality. We believe in creating
+            vehicles that not only meet performance expectations but also contribute toward a cleaner, smarter environment.
+        </p>
+    </section>
+
+    <section class="info">
+        <h2 id="Vision1">Vision</h2>
+        <p>To be a leading name in the automobile industry by blending customer-centric innovation with responsible
+            manufacturing and smart technology integration.</p>
+    </section>
+
+    <section class="info">
+        <h2>Mission</h2>
+        <p id="Mission1">To craft smart, reliable, and environmentally sustainable vehicles that elevate mobility and enhance lives.
+        </p>
+    </section>
+
+    <section class="info">
+        <h2>Our Values</h2>
+        <ul>
+            <li><strong>Innovation:</strong> We believe in challenging the norms to create forward-thinking solutions.
+            </li>
+            <li><strong>Integrity:</strong> We operate transparently with honesty and respect.</li>
+            <li><strong>Sustainability:</strong> We are committed to eco-friendly practices in every phase.</li>
+            <li><strong>Customer Excellence:</strong> We aim to exceed customer expectations at every touchpoint.</li>
+            <li><strong>Collaboration:</strong> We thrive on teamwork, shared knowledge, and collective success.</li>
+        </ul>
+    </section>
+
+    <section class="info">
+        <h2>Areas of Focus</h2>
+        <ul>
+            <li>Electric vehicle R&D and development</li>
+            <li>Smart mobility integration (AI, IoT)</li>
+            <li>Customer-first product engineering</li>
+            <li>Supply chain efficiency and sustainability</li>
+        </ul>
+    </section>
+
+    <section class="info">
+        <h2>Investment and Infrastructure</h2>
+        <p>
+            Initially we have planned to induce INR 100 Cr for the initial set up and operational cost of the company.
+            The production setup will be as per the international automotive norms and requirement to maintain the
+            automotive standards which will include manufacturing, testing, validation and inventory storage.
+        </p>
+        <p>
+            As part of our long-term vision, we are also planning to set up a Gigafactory focused on the production of
+            petrol and electric two-wheelers, EV batteries, and an integrated battery swapping system. This facility
+            will play a key role in building a future-ready, scalable infrastructure to support India's growing demand
+            for clean mobility solutions.
+        </p>
+        <p><strong>Dome shape warehouse structures shortlisted for plant:</strong></p>
+        <ul>
+            <li><strong>Dharuhera - Haryana:</strong> 15 acres, built-up 4 lac sq ft</li>
+            <li><strong>Palwal - Haryana:</strong> 20 acres, built-up 6 lac sq ft</li>
+            <li><strong>Ambala - Haryana:</strong> 06 acres, built-up 1.50 lac sq ft</li>
+            <li><strong>Khawaspur - Haryana:</strong> 05 acres, built-up 1.50 lac sq ft</li>
+            <li><strong>Mumbai - Maharashtra:</strong> 04 acres, built-up 1 lac sq ft</li>
+        </ul>
+    </section>
+
+
+
+    <section class="info">
+        <h2>Future Outlook</h2>
+        <p>We aim to capture significant market share in India’s electric and smart vehicle segment within the next five
+            years, establishing MA Motors as a pioneer in sustainable innovation.</p>
+    </section>
+
+    
+
+    <section class="info">
+        <h2>Next Step</h2>
+        <p>We are actively seeking strategic partnerships, investments, and collaborations to scale our vision. Connect
+            with us to be part of this journey toward future-ready mobility.</p>
+    </section>
+
+    <footer id="Contact1">
+        © 2025 MA Motors | New Delhi & Pune, India | Call/WhatsApp: +91 8983150100 | Email: info.mamotors@gmail.com
+    </footer>
+
+</body>
+
+</html>
