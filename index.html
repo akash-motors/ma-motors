@@ -140,6 +140,26 @@
                 max-width: 100%;
             }
         }
+
+        .logo-section {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 40px 10%;
+            background-color: #ffffff;
+            flex-wrap: wrap;
+        }
+
+        .logo-img {
+            width: 120px;
+            height: auto;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+        }
+
+        .logo-img:hover {
+            transform: scale(1.1);
+        }
     </style>
 </head>
 
@@ -284,9 +304,13 @@
             a balanced and sustainable business strategy.
         </p>
     </section>
+    <section class="logo-section">
+        <img src="logo1.png" alt="Partner Logo 1" class="logo-img" />
+        <img src="logo2.png" alt="Partner Logo 2" class="logo-img" />
+    </section>
 
     <footer id="Contact1">
-        © 2025 MA Motors | New Delhi & Pune, India | Call/WhatsApp: +91 8983150100 | Email: info.mamotors@gmail.com
+        © 2025 MA Motors | New Delhi & Pune, India | Email: info.mamotors@gmail.com
     </footer>
 
 </body>
